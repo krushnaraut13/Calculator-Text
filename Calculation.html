@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .paraent {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .a {
+            height: 50px;
+            background-color: chartreuse;
+            border-style: solid;
+            border-width: 10px;
+            border-color: blue;
+            text-align: center;
+        }
+
+        * {
+            background-color: aqua;
+        }
+
+        .but {
+            height: 30px;
+            width: 100px;
+            border-color: darkred;
+
+        }
+
+        .p {
+            text-align: center;
+            font-size: 50px;
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sum Of Two Numbers</h1>
+    <div class="paraent">
+        <input type="number" class="a" placeholder="Enter 1st Number" id="input1">
+        <input type="number" class="a" placeholder="Enter 1st Number" id="input2">
+        <p class="p" id="paragraph">Sum:</p>
+        <button type="button" class="but" onclick="calsum()">Calculate</button>
+        <button type="button" class="but" onclick="reset()">Reset</button>
+    </div>
+</body>
+<script>
+    function calsum() {
+        const abc = document.getElementById("input1");
+        const xyz = document.getElementById("input2");
+        const lmn = document.getElementById("paragraph");
+
+        const sum = parseInt(abc.value) + parseInt(xyz.value);
+        lmn.innerText = sum;
+    }
+    function reset() {
+        const abc = document.getElementById("input1");
+        abc.value = "";
+        const xyz = document.getElementById("input2");
+        xyz.value = "";
+        const lmn = document.getElementById("paragraph");
+        lmn.innerText = "";
+    }
+</script>
+
+</html>
