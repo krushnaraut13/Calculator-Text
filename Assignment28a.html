@@ -64,6 +64,14 @@
         const sum = parseInt(abc.value) + parseInt(xyz.value);
         lmn.innerText = sum;
     }
+    function reset() {
+        const abc = document.getElementById("input1");
+        abc.value = "";
+        const xyz = document.getElementById("input2");
+        xyz.value = "";
+        const lmn = document.getElementById("paragraph");
+        lmn.innerText = "";
+    }
 </script>
 
 </html>
